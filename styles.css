@@ -911,6 +911,8 @@ position: absolute;
     margin-top: 30px;
 }
 
+/*Parte de Jonatan*/
+
 .heroabout {
     display: flex;
     width: 80%; 
@@ -922,4 +924,148 @@ position: absolute;
 
 .heroaboutdescription {
     width: 758px;
+}
+
+@media (max-width: 992px) {
+    .heroabout {
+        flex-direction: column; 
+        width: 90%; 
+        padding-top: 60px;
+        gap: 40px;
+    }
+
+    .heroaboutdescription {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .welcome {
+        width: 100%; 
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .aboutstats {
+        justify-content: center; 
+        gap: 25px;
+        margin-top: 30px;
+    }
+}
+
+.milestones {
+    max-width: 1200px;
+    width: 90%; 
+    margin: auto;
+    padding-top: 150px;
+}
+
+.timelinerecent,
+.timelineold {
+    display: none; 
+}
+
+.milestonesintroduction {
+    width: 996px; 
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.milestonerow,
+.milestonerow-reverse {
+    display: flex;
+    align-items: center;
+    margin-top: 52.5px;
+    width: 100%;
+    height: auto;
+}
+
+.milestonesquare,
+.milestonesquare-reverse {
+    width: 45%; 
+    height: auto;
+    padding: 20px;
+    transition: none; 
+}
+
+.timeline-wrapper {
+    position: relative;
+    padding-top: 50px;
+}
+
+.timeline-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: var(--timeline-recent); 
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.dot, .dotreverse {
+    left: 50%; 
+    transform: translateX(-50%);
+    position: absolute; 
+    z-index: 2;
+}
+
+.speech-bubble { margin-right: 123px; }
+.speech-bubbleleft { margin-left: 123px; }
+
+@media (max-width: 768px) {
+
+    .milestonesintroduction {
+        max-width: 95%;
+        padding: 0 10px;
+    }
+
+    .timeline-wrapper::before {
+        left: 20px;
+    }
+
+    .milestonerow,
+    .milestonerow-reverse {
+        flex-direction: column; 
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .milestonesquare,
+    .milestonesquare-reverse,
+    .milestonesquarefinale {
+        width: 90%;
+        margin: 10px auto; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .speech-bubble:after,
+    .speech-bubbleleft:after {
+        content: none;
+    }
+
+    .dot, .dotreverse {
+        left: 20px; 
+        transform: translateX(-50%);
+        margin-left: 0;
+        top: 0;
+    }
+
+    .milestonesquare {
+        margin-left: 30px; 
+        padding: 15px;
+    }
+
+    .milestonesquare-reverse {
+        flex-direction: row; 
+        margin-left: 30px;
+        padding: 15px;
+    }
+
+    .speech-bubble,
+    .speech-bubbleleft {
+        margin: 10px 0 10px 30px;
+    }
 }
