@@ -2407,3 +2407,20 @@ position: absolute;
         display: none;
     }
 }
+/*=========Jonatan==========*/
+/*======Media Queries======*/
+/*==Dispositivos Mobiles==*/
+@media (min-width: 320px) and (max-width: 768px){
+    body{
+        font-family: Manrope, SemiBold;
+        margin: 0px;
+        padding: 0px;      
+    }    
+
+    .we_loved_from{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+}
