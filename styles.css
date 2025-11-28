@@ -2423,4 +2423,85 @@ position: absolute;
         align-items: center;
         padding: 15px;
     }
+
+ .contact ul{
+        display: none;
+    }
+
+    .contact .icons{
+        display: block;
+    }
+
+    .heroabout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .heroabout img{
+        width: 100%;
+        max-width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .aboutstats{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .aboutstats h1{
+        font-size: 1.5em;
+    }
+
+    .milestones{
+        padding: 40px 15px;
+    }
+
+    .milestonerow, .milestonerow-reverse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 10px 0;
+    }
+
+    .milestonesquare, .milestonesquare-reverse, .milestonesquarefinale {
+    width: 90%;
+    margin-top: 15px;
+    }
+
+    .timelineold {
+    width: 2px;
+    height: 60px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+    .year, .now {
+    text-align: center;
+    width: 100%;
+}
+
+    .footer-top, .contact-bar {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    .footer-menu a {
+    display: block; 
+    margin: 5px 0;
+}
+
+    .contact-bar .separator {
+    display: none; 
+}
+    .contact-bar .contacts {
+    flex-direction: column;
+}
 }
